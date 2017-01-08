@@ -1,0 +1,37 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+RepoWithClosure	code/closure.php	/^class RepoWithClosure extends ThingRepository$/;"	c
+RepoWithExceptions	code/exceptions.php	/^class RepoWithExceptions extends ThingRepository$/;"	c
+RepoWithImporter	code/iterable.php	/^class RepoWithImporter extends ThingRepository$/;"	c
+Sample	code/void.php	/^class Sample$/;"	c
+Thing	code/base.php	/^class Thing$/;"	c
+ThingRepoWithContants	code/constant.php	/^class ThingRepoWithContants extends ThingRepository$/;"	c
+ThingRepository	code/base.php	/^class ThingRepository$/;"	c
+__construct	code/base.php	/^    public function __construct(array $things)$/;"	f
+__construct	code/base.php	/^    public function __construct(string $name)$/;"	f
+array	code/iterable.php	/^$array = [new Thing('skateboard')];$/;"	v
+data	code/list.php	/^$data = [$/;"	v
+defaultNull	code/closure.php	/^$defaultNull = function(Closure $closure) {$/;"	v
+get	code/base.php	/^    public function get(int $id) : ?Thing$/;"	f
+getName	code/base.php	/^    public function getName()$/;"	f
+import	code/iterable.php	/^    public function import(iterable $things)$/;"	f
+iterator	code/iterable.php	/^$iterator = new ArrayIterator([new Thing('bike'), new Thing('plane')]);$/;"	v
+name	code/base.php	/^        $this->name = $name;$/;"	v
+name	code/base.php	/^    protected $name;$/;"	v
+repo	code/base.php	/^$repo = new ThingRepository([1 => new Thing('car'), 2 => new Thing('truck'), 3 => new Thing('car'), 4 => new Thing('motorcycle')]);$/;"	v
+results	code/exceptions.php	/^        $results = parent::search($name);$/;"	v
+returnNoData	code/void.php	/^    public function returnNoData() : void {$/;"	f
+search	code/base.php	/^    public function search(?string $name) : array$/;"	f
+search	code/closure.php	/^$search = $defaultNull($withClosure->searchAsClosure());$/;"	v
+search	code/exceptions.php	/^    public function search(?string $name) : array$/;"	f
+searchAsClosure	code/closure.php	/^    public function searchAsClosure() {$/;"	f
+things	code/base.php	/^        $this->things = $things;$/;"	v
+things	code/base.php	/^    protected $things;$/;"	v
+withClosure	code/closure.php	/^$withClosure = new RepoWithClosure($repo->search(null));$/;"	v
+withConstants	code/constant.php	/^$withConstants = new ThingRepoWithContants($repo->search(null));$/;"	v
+withExceptions	code/exceptions.php	/^$withExceptions = new RepoWithExceptions($repo->search(null));$/;"	v
+withImporter	code/iterable.php	/^$withImporter = new RepoWithImporter($repo->search(null));$/;"	v
